@@ -1,0 +1,12 @@
+name: flyrank-capstone-social-studio
+version: "1.0.0"
+base_url: "http://localhost:8000"
+run: "uvicorn src.main:app --reload"
+test: "pytest"
+endpoints:
+  - path: "/instagram/publish"
+    method: "POST"
+  - path: "/x/publish"
+    method: "POST"
+  - path: "/webhook/social-delivery"
+    method: "POST"
